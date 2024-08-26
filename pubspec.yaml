@@ -1,12 +1,17 @@
 name: bedrockws
 description: A starting point for Dart libraries or applications.
 version: 1.0.0
-# repository: https://github.com/my_org/my_repo
+homepage: https://github.com/bedrock-ws/
+repository: https://github.com/bedrock-ws/bedrockws-dart
+
+topics:
+  - bedrock-edition
+  - minecraft
+  - websocket
 
 environment:
   sdk: ^3.4.4
 
-# Add regular dependencies here.
 dependencies:
   async_locks: ^4.0.0
   logging: ^1.2.0
@@ -14,7 +19,6 @@ dependencies:
   shelf_web_socket: ^2.0.0
   uuid: ^4.4.0
   web_socket_channel: ^3.0.0
-  # path: ^1.8.0
 
 dev_dependencies:
   lints: ^4.0.0
