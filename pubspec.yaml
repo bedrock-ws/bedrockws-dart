@@ -1,5 +1,5 @@
 name: bedrockws
-description: A starting point for Dart libraries or applications.
+description: "Create Minecraft: Bedrock Edition WebSocket Servers"
 version: 1.0.0
 homepage: https://github.com/bedrock-ws/
 repository: https://github.com/bedrock-ws/bedrockws-dart
