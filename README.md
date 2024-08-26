@@ -18,4 +18,4 @@ Examples can be found in the [`examples`][Examples]
 |----------|-------------------------------------------|
 | Python   | <https://github.com/bedrock-ws/bedrockpy> |
 
-[Examples]: https://github.com/bedrock-ws/bedrockws/tree/main/example
+[Examples]: https://github.com/bedrock-ws/bedrockws-dart/tree/main/example
