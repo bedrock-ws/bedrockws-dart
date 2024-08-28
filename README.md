@@ -9,7 +9,7 @@ to communicate with a Minecraft: Bedrock Edition client (a player in a world).
 
 ## Examples
 
-Examples can be found in the [`example`][Examples]
+Examples can be found in the [`example`][Examples] directory.
 
 
 ## Other implementations
