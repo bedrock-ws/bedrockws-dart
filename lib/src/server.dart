@@ -11,6 +11,7 @@ class BedrockServer {
   final log = Logger('BedrockServer');
   final List<Client> _clients = [];
   bool _ready = false;
+  HttpServer? _server;
 
   EventHandler<ConnectContext>? _eventHandlerConnect;
   EventHandler<DisconnectContext>? _eventHandlerDisconnect;
@@ -264,7 +265,14 @@ class BedrockServer {
   /// Starts the Web Socket server.
   Future<void> serve(InternetAddress address, int port) async {
     await shelf_io.serve(_handler(), address, port).then((server) async {
+      _server = server;
       await _triggerReady(ReadyContext(this, address, port));
     });
+  }
+
+  /// Closes the server and returns a Future that completes when all resources
+  /// are released.
+  Future<void>? close() async {
+    return await _server?.close();
   }
 }
