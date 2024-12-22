@@ -16,7 +16,7 @@ void main() async {
       await ctx.client.execute('say hi');
     })
     ..onPlayerMessage((PlayerMessageContext ctx) async {
-      if (ctx.sender == name) return;
+      if (names.containsValue(ctx.sender)) return;
       await ctx.client.execute('say ${ctx.message}');
     });
 

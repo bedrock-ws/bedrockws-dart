@@ -17,7 +17,7 @@ void main() async {
     })
     ..onPlayerMessage((PlayerMessageContext ctx) async {
       print(ctx.sender);
-      if (ctx.sender == name) return;
+      if (names.containsValue(ctx.sender)) return;
       for (int i = 0; i <= 300; i++) {
         ctx.client.execute('say $i');
       }
