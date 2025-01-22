@@ -127,7 +127,7 @@ class BedrockServer {
             data,
           ));
         case 'BlockPlaced':
-          await _triggerBlocPlaced(BlockPlacedContext(
+          await _triggerBlockPlaced(BlockPlacedContext(
             this,
             client,
             data,
@@ -226,7 +226,7 @@ class BedrockServer {
     if (handler != null) await handler(ctx);
   }
 
-  Future<void> _triggerBlocPlaced(BlockPlacedContext ctx) async {
+  Future<void> _triggerBlockPlaced(BlockPlacedContext ctx) async {
     final handler = _eventHandlerBlockPlaced;
     if (handler != null) await handler(ctx);
   }
